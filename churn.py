@@ -56,7 +56,7 @@ def make_prediction(balance, creditscore, gender, geography, is_active_member, n
     predictions = model.predict([predict_sample])
 
     if int(predictions) == 0:
-        pred = 'The employee gonna leave, ooof lhemdollah fra3.'
+        pred = 'The client might stay.'
     else:
         pred = 'The client is leaving. An action shall be made.'
 
